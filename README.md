@@ -2,7 +2,10 @@
 
 CBFT is an illustration of how blockchain and hyperledger can be used to model cross border payments involving banks and customers in different currencies. *This is not about any cryptocurrency or its usage for payments.* The proposed solution uses fiat currencies but payments flow through distributed ledgers thus reducing correspondent banks/additional hops in the existing payments networks. If you are interested in reading the *motivation* behind creating this app then  please visit [A case for banks to introduce B2B "real-time" Cross Border Funds Transfer (CBFT) Services for SMEs using Blockchain - Part 1](https://www.linkedin.com/pulse/case-banks-introduce-b2b-real-time-cross-border-funds-raj-m-shimpi/)
 
-For our payment network, we will setup  of 2 peers, one orderer service, one CA authority service for certificate issuance and verification and one channel on which our peers will communicate. The initial setup of the network is populated with:
+You can also access youtube video on howto setup and run this app at https://www.youtube.com/watch?v=w0Ybr5_Gh8A
+
+
+For our payment network, we will setup  of 1 peer, one orderer service, one CA authority service for certificate issuance and verification and one channel on which our peers will communicate. The initial setup of the network is populated with:
 
 1. Three representative banks - US_Bank, UK_Bank and Japan_Bank. Each one with the domicile country's currency reserves. These reserves are required because one of the competitive advantage we have considered for banks to provide liquidity and thus manage risk.
 
@@ -66,7 +69,7 @@ Following are the software dependencies required to install and run hyperledger 
 
 Clone this repository to get the latest using the following command.
 1. `git clone https://github.com/Archstrategy/crossBorderFundsTransfer.git`
-2. `cd banks`
+2. `cd crossBorderFundsTransfer`  
 
 ## Setup banks network
 * Run the following command to kill any stale or active containers:
